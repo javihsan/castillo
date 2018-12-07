@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+	default-lazy-init="false">
+	
+	<bean id="inicioController" class="com.castillo.controllers.InicioController">
+		<property name="view" value="Inicio" />
+	</bean>
+	
+	<bean id="barController" class="com.castillo.controllers.BarController">
+		<property name="view" value="Bar" />
+	</bean>
+	
+	<bean id="albumController" class="com.castillo.controllers.AlbumController">
+		<property name="view" value="Album" />
+	</bean>
+	
+	<bean id="participaController" class="com.castillo.controllers.ParticipaController">
+		<property name="view" value="Participa" />
+	</bean>
+	
+	<bean id="mensajeCortoController" class="com.castillo.controllers.MensajeCortoController">
+		<property name="view" value="NuevoMensajeCorto" />
+	</bean>
+	
+	<bean id="sendController" class="com.castillo.controllers.SendController">
+		<property name="viewMap">
+			<map>
+				<entry key="salud-contacto">
+					 <value>SaludContactoResponse</value>
+				</entry>
+				<entry key="comun-interesa">
+					 <value>ComunInteresaResponse</value>
+				</entry>  
+				<entry key="arte-contacto">
+					 <value>ArteContactoResponse</value>
+				</entry>
+			</map>
+		</property>
+		<property name="sender" value="no-reply@mesoncastillo.com" />
+		<property name="recipient" value="info@mesoncastillo.com" />
+		<property name="recipientCC" value="javihsan@gmail.com" />
+		<property name="subject" value="Datos de contacto del Mesón Castillo" />
+	</bean>
+	
+	<!-- ADMIN -->
+	
+	<bean id="webAdminController" class="com.castillo.controllers.WebAdminController">
+		<property name="viewMap">
+			<map>
+				<entry key="textprinc-webadmin">
+					 <value>WebAdmin</value>
+				</entry>
+				<entry key="vcard-webadmin">
+					 <value>WebVCard</value>
+				</entry>
+				<entry key="download-vcard">
+					 <value>bar_contacta</value>
+				</entry>
+			</map>
+		</property>
+		<property name="paramMap">
+			<map>
+				<entry key="textprinc-webadmin">
+					 <value>Texto principal</value>
+				</entry>
+				<entry key="vcard-webadmin">
+					 <value>vcard</value>
+				</entry>
+				<entry key="download-vcard">
+					 <value>vcard</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<bean id="urlMapping"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="urlMap">
+			<map>
+				<entry key="/inicio*">
+					<ref bean="inicioController" />
+				</entry> 
+				<entry key="/bar_*">
+					<ref bean="barController" />
+				</entry>
+				<entry key="/album*">
+					<ref bean="albumController" />
+				</entry>
+				<entry key="/participa">
+					<ref bean="participaController" />
+				</entry>
+				<entry key="/*MensajeCorto">
+					<ref bean="mensajeCortoController" />
+				</entry>
+				<entry key="/*webadmin*">
+					<ref bean="webAdminController" />
+				</entry>
+				<entry key="/download-vcard">
+					<ref bean="webAdminController" />
+				</entry>
+				<entry key="/*send*">
+					<ref bean="sendController" />
+				</entry>
+				<entry key="/*">
+					<ref bean="urlViewController" />
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+   
+
+
+	<bean id="urlViewController" class="org.springframework.web.servlet.mvc.UrlFilenameViewController"/>
+	
+	<!-- <bean id="formController" class="org.springframework.web.servlet.mvc.SimpleFormController"> 
+		<property name="formView" value="account" /> <property name="successView" 
+		value="account-created" /> <property name="commandName" value="Account" /> 
+		<property name="commandClass" value="samples.Account" /> </bean> -->
+
+</beans>
