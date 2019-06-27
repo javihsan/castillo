@@ -7,7 +7,7 @@
 	<artifactId>mesoncastillo</artifactId>
 
 	<!-- VERSION -->
-	<version>r8-0-0</version>
+	<version>r8-0-1</version>
 
 	<packaging>war</packaging>
 	<name>${project.artifactId}</name>
@@ -295,23 +295,18 @@
 				module -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<version>${maven.antrun.plugin.version}</version>
-				<executions>
-					<execution>
-						<phase>prepare-package</phase>
-						<configuration>
-							<target>
-								<copy file="${target.dist.temp.folder}/WEB-INF/${web.xml.filename}"
-									tofile="${target.dist.temp.folder}/WEB-INF/web.xml" overwrite="true"
-									force="true" />
-							</target>
-						</configuration>
-						<goals>
-							<goal>run</goal>
-						</goals>
-					</execution>
-				</executions>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>${maven.war.plugin.version}</version>
+				<configuration>
+					<warSourceExcludes>**</warSourceExcludes>
+					<webResources>
+						<webResource>
+							<directory>${target.dist.temp.folder}</directory>
+							<filtering>true</filtering>
+							<excludes>${excludedFiles}</excludes>
+						</webResource>
+					</webResources>
+				</configuration>
 			</plugin>
 
 			<!-- WAR plugin -->
@@ -361,7 +356,7 @@
 			<plugin>
                 <groupId>org.datanucleus</groupId>
                 <artifactId>maven-datanucleus-plugin</artifactId>
-                <version>${datanucleus.jpa.version}</version>
+                <version>3.2.0-m1</version>
 
                 <configuration>
                     <api>JPA</api>
@@ -376,6 +371,11 @@
                         <artifactId>datanucleus-core</artifactId>
                         <version>${datanucleus.jpa.version}</version>
                     </dependency>
+                    <dependency>
+		    			<groupId>javax.jdo</groupId>
+		    			<artifactId>jdo-api</artifactId>
+		    			<version>3.1</version>
+					</dependency>
                 </dependencies>
 
                 <executions>
@@ -386,7 +386,7 @@
                         </goals>
                     </execution>
                 </executions>
-     </plugin>
+    		 </plugin>
 		</plugins>
 	</build>
 </project>
