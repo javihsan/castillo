@@ -7,6 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
 import org.apache.commons.beanutils.PropertyUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.castillo.negocio.dao.DAOMensaje;
 import com.castillo.negocio.dto.DTOMensaje;
@@ -17,12 +18,15 @@ import com.castillo.persist.transformer.TransformerMensaje;
 @SuppressWarnings("unchecked")
 public class ManagerMensaje implements DAOMensaje {
 
+	@Autowired
+	protected IEMF beanEMF;
+	
 	public ManagerMensaje() {
 	
 	}
 	 
 	private EntityManager getEntityManager() {
-		return EMF.get().createEntityManager();
+		return beanEMF.get().createEntityManager();
 	}
 
 	public DTOMensaje create(DTOMensaje mensaje) throws Exception {

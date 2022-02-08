@@ -7,6 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
 import org.apache.commons.beanutils.PropertyUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.castillo.negocio.dao.DAOWeb;
 import com.castillo.negocio.dto.DTOWeb;
@@ -17,12 +18,15 @@ import com.castillo.persist.transformer.TransformerWeb;
 @SuppressWarnings("unchecked")
 public class ManagerWeb implements DAOWeb {
 
+	@Autowired
+	protected IEMF beanEMF;
+	
 	public ManagerWeb() {
 
 	}
 
 	private EntityManager getEntityManager() {
-		return EMF.get().createEntityManager();
+		return beanEMF.get().createEntityManager();
 	}
 
 	public DTOWeb create(DTOWeb web) throws Exception {

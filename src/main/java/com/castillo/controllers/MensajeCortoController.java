@@ -5,14 +5,19 @@ import java.util.Date;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
 
+import com.castillo.negocio.dao.DAOMensaje;
 import com.castillo.negocio.dto.DTOMensaje;
 import com.castillo.persist.manager.ManagerMensaje;
 
 
 public class MensajeCortoController extends AbstractController {
+	
+	@Autowired
+	protected DAOMensaje mensajeManager;
 	
 	private String view;
 	
@@ -32,7 +37,7 @@ public class MensajeCortoController extends AbstractController {
 			mensajeBean.setMenTexto(texto);
 			mensajeBean.setMenIdForo(idForo);
 			
-			new ManagerMensaje().create(mensajeBean);	
+			mensajeManager.create(mensajeBean);	
 
 			mav = new ModelAndView("close");
 			

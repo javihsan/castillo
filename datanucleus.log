@@ -33,3 +33,94 @@
 10:54:57,638 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
 10:54:57,651 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
 10:54:57,653 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=314 ms, enhance=113 ms, total=427 ms. Consult the log for full details
+08:50:00,487 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JPA"
+08:50:00,597 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+08:50:00,925 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Album.class" with enhanced definition
+08:50:00,925 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Imagen.class" with enhanced definition
+08:50:00,925 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
+08:50:00,925 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
+08:50:00,925 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=297 ms, enhance=31 ms, total=328 ms. Consult the log for full details
+09:02:19,156 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JPA"
+09:02:19,219 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+09:02:19,422 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Album.class" with enhanced definition
+09:02:19,422 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Imagen.class" with enhanced definition
+09:02:19,437 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
+09:02:19,437 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
+09:02:19,437 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=157 ms, enhance=46 ms, total=203 ms. Consult the log for full details
+09:16:28,036 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JPA"
+09:16:28,107 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+09:16:28,359 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Album.class" with enhanced definition
+09:16:28,361 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Imagen.class" with enhanced definition
+09:16:28,364 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
+09:16:28,366 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
+09:16:28,367 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=216 ms, enhance=41 ms, total=257 ms. Consult the log for full details
+09:17:11,380 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JPA"
+09:17:11,451 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+09:17:11,626 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Album.class" with enhanced definition
+09:17:11,628 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Imagen.class" with enhanced definition
+09:17:11,631 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
+09:17:11,634 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
+09:17:11,635 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=139 ms, enhance=42 ms, total=181 ms. Consult the log for full details
+09:27:46,944 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JPA"
+09:27:47,020 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+09:27:47,222 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Album.class" with enhanced definition
+09:27:47,224 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Imagen.class" with enhanced definition
+09:27:47,227 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
+09:27:47,229 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
+09:27:47,230 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=162 ms, enhance=47 ms, total=209 ms. Consult the log for full details
+09:38:22,682 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JPA"
+09:38:22,756 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+09:38:22,918 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Album.class" with enhanced definition
+09:38:22,920 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Imagen.class" with enhanced definition
+09:38:22,923 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
+09:38:22,925 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
+09:38:22,926 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=136 ms, enhance=32 ms, total=168 ms. Consult the log for full details
+09:39:29,478 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JPA"
+09:39:29,542 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+09:39:29,681 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Album.class" with enhanced definition
+09:39:29,683 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Imagen.class" with enhanced definition
+09:39:29,686 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
+09:39:29,687 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
+09:39:29,688 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=113 ms, enhance=31 ms, total=144 ms. Consult the log for full details
+09:47:25,901 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JPA"
+09:47:25,964 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+09:47:26,125 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Album.class" with enhanced definition
+09:47:26,128 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Imagen.class" with enhanced definition
+09:47:26,130 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
+09:47:26,132 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
+09:47:26,133 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=136 ms, enhance=30 ms, total=166 ms. Consult the log for full details
+09:48:16,443 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JPA"
+09:48:16,509 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+09:48:16,671 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Album.class" with enhanced definition
+09:48:16,674 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Imagen.class" with enhanced definition
+09:48:16,677 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
+09:48:16,679 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
+09:48:16,679 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=128 ms, enhance=40 ms, total=168 ms. Consult the log for full details
+09:57:40,263 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JPA"
+09:57:40,328 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+09:57:40,472 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Album.class" with enhanced definition
+09:57:40,474 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Imagen.class" with enhanced definition
+09:57:40,477 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
+09:57:40,479 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
+09:57:40,479 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=118 ms, enhance=31 ms, total=149 ms. Consult the log for full details
+10:02:19,155 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JPA"
+10:02:19,229 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+10:02:19,386 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Album.class" with enhanced definition
+10:02:19,389 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Imagen.class" with enhanced definition
+10:02:19,391 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
+10:02:19,393 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
+10:02:19,394 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=121 ms, enhance=42 ms, total=163 ms. Consult the log for full details
+10:06:58,628 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JPA"
+10:06:58,694 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+10:06:58,816 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Album.class" with enhanced definition
+10:06:58,818 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Imagen.class" with enhanced definition
+10:06:58,821 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
+10:06:58,823 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
+10:06:58,823 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=97 ms, enhance=30 ms, total=127 ms. Consult the log for full details
+10:08:40,685 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer for API "JPA"
+10:08:40,754 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (version 3.1.1) : Enhancement of classes
+10:08:40,893 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Album.class" with enhanced definition
+10:08:40,896 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Imagen.class" with enhanced definition
+10:08:40,898 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Mensaje.class" with enhanced definition
+10:08:40,900 (main) INFO  [DataNucleus.Enhancer] - Writing class file "C:\work\repository\diloso\castillo\target\mesoncastillo\WEB-INF\classes\com\castillo\persist\entities\Web.class" with enhanced definition
+10:08:40,901 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer completed with success for 4 classes. Timings : input=101 ms, enhance=43 ms, total=144 ms. Consult the log for full details

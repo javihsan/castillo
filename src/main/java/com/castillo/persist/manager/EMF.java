@@ -3,13 +3,13 @@ package com.castillo.persist.manager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public final class EMF {
-    private static final EntityManagerFactory emfInstance =
+public class EMF implements IEMF{
+    protected static final EntityManagerFactory emfInstance =
         Persistence.createEntityManagerFactory("transactions-optional");
 
-    private EMF() {}
+    protected EMF() {}
 
-    public static EntityManagerFactory get() {
+    public EntityManagerFactory get() {
         return emfInstance;
     }
 }

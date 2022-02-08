@@ -7,6 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
 import org.apache.commons.beanutils.PropertyUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.castillo.negocio.dao.DAOAlbum;
 import com.castillo.negocio.dto.DTOAlbum;
@@ -17,12 +18,15 @@ import com.castillo.persist.transformer.TransformerAlbum;
 @SuppressWarnings("unchecked")
 public class ManagerAlbum implements DAOAlbum {
 
+	@Autowired
+	protected IEMF beanEMF;
+	
 	public ManagerAlbum() {
 	
 	}
 	 
 	private EntityManager getEntityManager() {
-		return EMF.get().createEntityManager();
+		return beanEMF.get().createEntityManager();
 	}
 
 	public DTOAlbum create(DTOAlbum album) throws Exception {

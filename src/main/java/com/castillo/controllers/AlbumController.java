@@ -7,6 +7,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
 
@@ -20,6 +21,9 @@ import com.google.appengine.api.blobstore.BlobstoreServiceFactory;
 
 public class AlbumController extends AbstractController {
 
+	@Autowired
+	protected DAOAlbum albumManager;
+	
 	private String view;
 
 	@Override
@@ -30,10 +34,7 @@ public class AlbumController extends AbstractController {
 		
 		if (path.indexOf(ControllerConstants.LIST)!=-1){
 			return albumList(arg0,arg1);
-		}/*
-		if (path.indexOf(ControllerConstants.VIEW)!=-1){
-			return albumView(arg0,arg1);
-		}*/
+		}
 		if (path.indexOf(ControllerConstants.ADMIN)!=-1){
 			return albumAdmin(arg0,arg1);
 		}
@@ -56,7 +57,6 @@ public class AlbumController extends AbstractController {
 	private ModelAndView albumList(HttpServletRequest arg0,
 			HttpServletResponse arg1) throws Exception {
 		
-		DAOAlbum albumManager = new ManagerAlbum();
 		List<DTOAlbum> vAlbum = albumManager.getAlbum();
 
 		ModelAndView mav = new ModelAndView(getView()+ControllerConstants.LIST);
@@ -65,26 +65,10 @@ public class AlbumController extends AbstractController {
 		return mav;
 
 	}
-	/*
-	private ModelAndView albumView(HttpServletRequest arg0,
-			HttpServletResponse arg1) throws Exception {
 		
-		Long id = Long.parseLong(arg0.getParameter("id"));
-		
-		DAOAlbum albumManager = new ManagerAlbum();
-		DTOAlbum album = albumManager.getById(id);
-
-		ModelAndView mav = new ModelAndView(getView()+ControllerConstants.VIEW);
-		mav.addObject("album", album);
-		
-		return mav;
-
-	}*/
-	
 	private ModelAndView albumAdmin(HttpServletRequest arg0,
 			HttpServletResponse arg1) throws Exception {
 		
-		DAOAlbum albumManager = new ManagerAlbum();
 		List<DTOAlbum> vAlbum = albumManager.getAlbumAdmin();
 
 		ModelAndView mav = new ModelAndView(getView()+ControllerConstants.ADMIN);
@@ -143,7 +127,6 @@ public class AlbumController extends AbstractController {
 
 		Long id = Long.parseLong(arg0.getParameter("id"));
 		
-		DAOAlbum albumManager = new ManagerAlbum();
 		DTOAlbum album = albumManager.getById(id);
 		
 		ModelAndView mav = new ModelAndView(getView()+ControllerConstants.EDIT);

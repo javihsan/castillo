@@ -6,6 +6,7 @@ import java.util.Set;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
 
@@ -19,6 +20,9 @@ import com.google.appengine.api.datastore.Text;
 
 public class WebAdminController extends AbstractController {
 
+	@Autowired
+	protected DAOWeb webManager;
+	
 	private Map viewMap;
 	private String view;
 	private String path;
@@ -59,16 +63,15 @@ public class WebAdminController extends AbstractController {
 	private ModelAndView webEdit(HttpServletRequest arg0,
 			HttpServletResponse arg1) throws Exception {
 
-		DAOWeb ManagerWeb = new ManagerWeb();
-		DTOWeb web = ManagerWeb.getWebBBDDByWebParametro(getParam());
+		DTOWeb web = webManager.getWebBBDDByWebParametro(getParam());
 		
 		if (web == null){ // New
 			
 			web = new DTOWeb();
 			web.setWebParametro(getParam());
 	        
-	        ManagerWeb = new ManagerWeb();
-			web = ManagerWeb.create(web);
+			webManager = new ManagerWeb();
+			web = webManager.create(web);
 		}
 
 		
@@ -102,8 +105,7 @@ public class WebAdminController extends AbstractController {
         web.setWebValor(webValor);
         web.setWebActivado(webActivado);
         
-        DAOWeb ManagerWeb = new ManagerWeb();
-        web = ManagerWeb.update(web);
+        web = webManager.update(web);
         
         if (arg0.getParameter("webValorFileDelete")!=null){
 			if (web.getWebValorFile()!=null){
@@ -120,8 +122,7 @@ public class WebAdminController extends AbstractController {
 	private ModelAndView webDownload(HttpServletRequest arg0,
 			HttpServletResponse arg1) throws Exception {
 		
-		DAOWeb ManagerWeb = new ManagerWeb();
-		DTOWeb web = ManagerWeb.getWebByWebParametro(getParam());
+		DTOWeb web = webManager.getWebByWebParametro(getParam());
         
 		if (web != null && web.getWebValorFile()!= null && web.getWebValorFile()!= ""){ 
 			

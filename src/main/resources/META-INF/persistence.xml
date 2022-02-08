@@ -3,11 +3,19 @@
 
     <persistence-unit name="transactions-optional">
         <provider>org.datanucleus.api.jpa.PersistenceProviderImpl</provider>
+        <class>com.castillo.persist.entities.Album</class>
+        <class>com.castillo.persist.entities.Mensaje</class>
+        <class>com.castillo.persist.entities.Web</class>
+        <class>com.castillo.persist.entities.Imagen</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        
         <properties>
             <property name="datanucleus.NontransactionalRead" value="true"/>
             <property name="datanucleus.NontransactionalWrite" value="true"/>
             <property name="datanucleus.ConnectionURL" value="appengine"/>
+            <property name="datanucleus.singletonEMFForName" value="true"/>
         </properties>
+        
     </persistence-unit>
 
 </persistence>
